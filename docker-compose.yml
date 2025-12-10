@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  nginx:
+    build: .
+    container_name: nginx_proxy
+    ports:
+      - "443:443"
+    networks:
+      - dev_bridge
+    restart: unless-stopped
+
+networks:
+  dev_bridge:
+    external: true
+    
