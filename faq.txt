@@ -1,2 +1,2 @@
-openssl rsa -in ca.example.com.key -out ca.example.com_unencrypted.key
+openssl rsa -in ca01.example.com.key -out ca01.example.com_unencrypted.key
 docker compose up -d --build
